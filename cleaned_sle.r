@@ -47,8 +47,8 @@ merged_df$Date <- gsub("X", "", merged_df$Date)
 # Convert the 'Date' column to date format
 merged_df$Date <- as.Date(merged_df$Date, format = "%m/%d/%Y")
 
-# Replace empty strings in the 'Inside.Outside' column with NA
-merged_df$Inside.Outside[merged_df$Inside.Outside == ""] <- "D"
+# Replace empty strings in the 'W.L' column with NA
+merged_df$Inside.Outside[merged_df$W.L == ""] <- "D"
 
 
 # Get weekday from date
